@@ -72,17 +72,17 @@
     float :left;
     margin-left:10px;
 }
-#col-head{
+.col-head{
     font-family: Arial;
     font-weight:bold;
 }
-.top-news-items{
+.news-items{
     text-decoration: none;
     color: black;
     font-family: Arial;
     font-size: 15px;
 }
-.top-news-items:hover{
+.news-items:hover{
     text-decoration: underline;
 }
 .thumbnail{
@@ -92,3 +92,10 @@
     border-radius: 4px;
     padding: 5px;
 }
+.thick-line{
+    border: 2px solid black;
+}
+.entertainment{
+    margin:1px 0px 3px 0.5px;
+}
+
