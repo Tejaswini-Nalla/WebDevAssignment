@@ -1,3 +1,8 @@
+.container{
+    width:70%;
+    margin-left: 15em;
+    margin-right:15em;
+}
 #top-header{
     background-color: black;
     height: auto;
@@ -37,4 +42,53 @@
 .fa-youtube{
     margin-right: 10px;
 }
-
+#header{
+    background-color: #ce2408;
+    color: white;
+    text-align: center;
+}
+#header #media-name{
+    font-size:40px;
+}
+#bottom-header{
+    background-color: #bf1610;
+    text-align: center;
+}
+.nav-item{
+    color: white;
+    margin-right:2px;
+    margin-left:3px;
+    padding:2px;
+    cursor:pointer;
+}
+.nav-item:hover {
+    background-color:white;
+    color :black;
+}
+.row{
+    margin-top: 5px;
+}
+.col-3{
+    float :left;
+    margin-left:10px;
+}
+#col-head{
+    font-family: Arial;
+    font-weight:bold;
+}
+.top-news-items{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-size: 15px;
+}
+.top-news-items:hover{
+    text-decoration: underline;
+}
+.thumbnail{
+    height:240px;
+    max-width:250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
