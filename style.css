@@ -96,6 +96,47 @@
     border: 2px solid black;
 }
 .entertainment{
-    margin:1px 0px 3px 0.5px;
+    padding:10px;
 }
+.videos{
+    max-width: 100px;
+    float:left;
+    padding:5px;
+    background-color: #e5e1e4;
 
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position:absolute;
+    background-color: white;
+    min-width: 200px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    text-decoration: none;
+    color:black;
+    display: block;
+
+}
+.dropdown-content a:hover{
+    color:red
+}
+.dropdownbutton{
+    color: white;
+    margin-right:2px;
+    margin-left:3px;
+    cursor:pointer;
+    background-color:#bf1610;
+    border-width: 0px;
+    font-size: small;
+}
+.dropdownbutton:hover{
+    background-color: white;
+    color:black;
+}
