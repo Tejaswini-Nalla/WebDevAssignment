@@ -3,13 +3,56 @@
         <title>Home</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
             <div id="top-header">
                 <span id="timestamp"> WED, MAR 11,2020|UPDATED</span>
                 <div id="top-header-right">
-                    <button id="signin" onclick="#">SIGN IN</button>
+                    <button id="signin">SIGN IN</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <fieldset style="margin-top: 30px;border:0.5px solid #aaaaaa">
+                                <legend style="margin-left:45%;"><i class="fa fa-user"></i></legend>
+                                <div class="signin-form">
+                                    <div>
+                                        <a href="#" class="fb btn">
+                                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                                        </a><br>
+                                        <a href="#" class="google btn">
+                                            <i class="fa fa-google fa-fw"></i> Login with Google+
+                                        </a>
+                                    </div>
+                                    <div style="margin:15px 0px 15px 5px">
+                                        <hr style="width: 20%;float:left;border:0.5px solid #aaaaaa">
+                                        <span style="color: #aaaaaa;padding:0px 15px 0px 15px;float:left">or go the traditional way</span>
+                                        <hr style="width:20%;float:left;border:0.5px solid #aaaaaa">
+                                    </div>
+
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <script>
+                        var modal = document.getElementById("myModal");
+                        var signin_button = document.getElementById("signin");
+                        var close_span = document.getElementsByClassName("close")[0];
+                        signin_button.onclick = function() {
+                            modal.style.display = "block";
+                        }
+                        close_span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
                     <a href="https://twitter.com/timesofindia" class="fa fa-twitter icon"></a>
                     <a href="https://www.facebook.com/TimesofIndia" class="fa fa-facebook icon"></a>
                     <a href="https://www.youtube.com/user/TimesOfIndiaChannel" class="fa fa-youtube icon"></a>
@@ -22,7 +65,6 @@
             </div>
             <div id="bottom-header">
                 <i class="fa fa-home" style="font-size:24px;color: white"></i>
-                <!--span class="nav-item">Briefs</span-->
                 <div class="dropdown nav-item">
                     <button class="dropdownbutton">Briefs</button>
                     <div class="dropdown-content">
